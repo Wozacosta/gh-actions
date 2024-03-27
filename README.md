@@ -1,6 +1,6 @@
 # GitHub Actions Fundamentals
 
-test
+test #2
 Repo for the `GitHub Actions Fundamentals` training.
 
 ## 👉 Objectives

@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: Test workflow ${{ github.run_number }}
+run-name: Test workflow bis ${{ github.run_number }}
 
 defaults:
   run:
@@ -7,16 +7,15 @@ defaults:
 
 on:
   push: # on every push to the main branch, but not when there are changes to files in the .github folder.
-    branches: [ main ]
+    branches: [main]
     paths-ignore: [.github/**]
 
 permissions:
   contents: read
 
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: |
+      - run: |
           echo "yay"
