@@ -1,0 +1,22 @@
+name: GitHub Actions Demo
+run-name: Test workflow ${{ github.run_number }}
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push: # on every push to the main branch, but not when there are changes to files in the .github folder.
+    branches: [ main ]
+    paths-ignore: [.github/**]
+
+permissions:
+  contents: read
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+          echo "yay"
