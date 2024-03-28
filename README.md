@@ -1,6 +1,6 @@
 # GitHub Actions Fundamentals
 
-test #2 #3skipping
+test #2 #3skipping #4
 Repo for the `GitHub Actions Fundamentals` training.
 
 ## 👉 Objectives
